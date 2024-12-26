@@ -4,10 +4,10 @@ import java.io.IOException;
 
 public class main {
     public static void main(String[] args) {
-        // Create a school object
+
         school school = new school();
 
-        // Read students from file and add to the school
+
         try (BufferedReader br = new BufferedReader(new FileReader("students.txt"))) {
             String line;
             while ((line = br.readLine()) != null) {
@@ -29,7 +29,7 @@ public class main {
             System.out.println("Error reading students file: " + e.getMessage());
         }
 
-        // Read teachers from file and add to the school
+
         try (BufferedReader br = new BufferedReader(new FileReader("teachers.txt"))) {
             String line;
             while ((line = br.readLine()) != null) {
@@ -54,10 +54,10 @@ public class main {
             System.out.println("Error reading teachers file: " + e.getMessage());
         }
 
-        // Display all school members
+
         System.out.println(school);
 
-        // Demonstrate specific Student methods
+
         System.out.println("\nGPA of Students:");
         for (person member : school.getMembers()) {
             if (member instanceof student) {
@@ -66,7 +66,7 @@ public class main {
             }
         }
 
-        // Demonstrate specific Teacher methods
+
         System.out.println("\nTeachers' Salaries After Raises:");
         for (person member : school.getMembers()) {
             if (member instanceof teacher) {
