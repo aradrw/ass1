@@ -8,7 +8,7 @@ public class main {
         school school = new school();
 
 
-        try (BufferedReader br = new BufferedReader(new FileReader("students.txt"))) {
+        try (BufferedReader br = new BufferedReader(new FileReader("src/students.txt"))) {
             String line;
             while ((line = br.readLine()) != null) {
                 String[] parts = line.split(" ");
@@ -30,7 +30,7 @@ public class main {
         }
 
 
-        try (BufferedReader br = new BufferedReader(new FileReader("teachers.txt"))) {
+        try (BufferedReader br = new BufferedReader(new FileReader("src/teachers.txt"))) {
             String line;
             while ((line = br.readLine()) != null) {
                 String[] parts = line.split(" ");

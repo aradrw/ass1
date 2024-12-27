@@ -2,6 +2,7 @@ public class person {
     private String name;
     private String surname;
     private int age;
+    private int id;
     private boolean gender;
 
 
@@ -10,6 +11,7 @@ public class person {
         this.surname = surname;
         this.age = age;
         this.gender = gender;
+        this.id = id;
     }
 
     @Override
@@ -49,6 +51,14 @@ public class person {
 
     public void setGender(boolean gender) {
         this.gender = gender;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int age) {
+        this.id = id;
     }
 
 
